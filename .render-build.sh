@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+echo "Installing Node dependencies..."
+npm install
 echo "Downloading Stockfish....."
 curl -L -o stockfish-ubuntu-x86-64-avx2.tar "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-ubuntu-x86-64-avx2.tar"
 ls -al
