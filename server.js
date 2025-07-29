@@ -58,7 +58,9 @@ app.get("/best-move", async (req, res) => {
     res.status(500).json({ error: "Failed to evaluate position" });
   }
 });
-
+app.get('/test/basic', async (req,res) => {
+  res.json({ test: true, message: 'This is the test message from StockfishServer' });
+});
 // Start the server
 app.listen(PORT, () => {
   console.log(`♟️ Stockfish API running on port ${PORT}`);
